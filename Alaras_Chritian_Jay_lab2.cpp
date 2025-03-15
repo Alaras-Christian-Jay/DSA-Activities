@@ -111,9 +111,30 @@ Node* deleteFromGivenNode(string givenNode, Node* head) {
 
 int main() {
     Node* head = createNode("Sanctuary by Joji");
-    head = insertAtEnd("Sunday Morning by Maroon 5", head);
-    head = insertAtBeginning("Glimpse of Us by Joji", head);
-    head = insertAfter("Another Song", head->link, head);
+    head = insertAtEnd("Blinding Lights by The Weeknd", head);
+    traverse(head);
+    head = insertAtEnd("Shape of You by Ed Sheeran", head);
+    traverse(head);
+    head = insertAtEnd("Someone You Loved by Lewis Capaldi", head);
+    traverse(head);
+   
+    head = insertAtBeginning("Tibok by Earl Agustin", head);
+    traverse(head);
+    head = insertAtBeginning("Isa lang by Arthur Nery", head);
+    traverse(head);
+    head = insertAtBeginning("Superpower by Daniel Caesar", head);
+    traverse(head);
+    head = insertAtBeginning("Paraluman by Adie", head);
+    traverse(head);
+    
+    head = insertAfter("Anak by Freddie Aguilar", head->link, head);
+    traverse(head);
+    head = insertAfter("Tadhana by Up Dharma Down", head->link, head);
+    traverse(head);
+    head = insertAfter("Prinsesa by 6cyclemind", head->link, head);
+    traverse(head);
+
+
 
     traverse(head);
     cout << "--------------------" << endl;
@@ -126,7 +147,7 @@ int main() {
     traverse(head);
     cout << "--------------------" << endl;
 
-    head = deleteFromGivenNode("Another Song", head);
+    head = deleteFromGivenNode("Anak by Freddie Aguilar", head);
     traverse(head);
 
     Node* current = head;
